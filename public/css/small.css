@@ -1,0 +1,85 @@
+/******* Change Box Model ***************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*Header/ logo*/
+#top-header{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 1% 0 1%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  
+}
+.siteName a{
+  font-size: 1.4rem;
+  
+}
+#tools{
+  margin-top: 0.1rem;
+  
+}
+.siteName a,#tools a {
+  text-decoration: none;
+  color:white;
+}
+
+#tools .logout{
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  
+}
+#tools a:hover{
+  background-color: black;
+  color: white;
+}
+#myLinks {
+  display: none; /* Initially hide the links */
+  flex-direction: column; /* Arrange items in a column */
+  background-color: rgb(10, 10, 10); /* Set background color */
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  width: 100%; /* Occupy full width */
+  position:relative; /* Position it absolutely below the header */
+  top: 100%; /* Position it below the header */
+  left: 0; /* Align to the left */
+  z-index: 1000; /* Make sure it appears above other content */
+  border: 1px solid red;
+}
+#myLinks li {
+  padding: 15px; /* Add padding to list items */
+  color: rgb(253, 249, 249); /* Set text color */
+  text-align: center; /* Center align the text */
+}
+
+/* Optional: Add hover effect */
+#myLinks li:hover {
+  background-color: rgb(184, 43, 43); /* Change background on hover */
+}
+
+/* Add a grey background color on mouse-over */
+.hamburger:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style for the hamburger button */
+.hamburger {
+  color: white;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+  position: relative; /* Change to relative for positioning */
+}
