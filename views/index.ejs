@@ -2,14 +2,22 @@
 <script>
     function myFunction() {
         var myMenuLinks = document.getElementById("myLinks");
+        var hamburger = document.querySelector(".hamburger i");
         var isVisible = myMenuLinks.style.display === "flex";
     
         if (isVisible) {
             myMenuLinks.style.display = "none"; // Hide the menu
+            hamburger.className = "fa fa-bars"; // Change back to hamburger icon
         } else {
             myMenuLinks.style.display = "flex"; // Show the menu as flex
             myMenuLinks.style.color = "white"; // Set text color
+            hamburger.className = "fa fa-times"; // Change to 'X' icon
         }
+
+        // Toggle aria-expanded attribute
+        var currentState = hamburger.parentElement.getAttribute("aria-expanded");
+        var newState = currentState === "true" ? "false" : "true";
+        hamburger.parentElement.setAttribute("aria-expanded", newState);
     }
     
     
