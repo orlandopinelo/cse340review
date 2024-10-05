@@ -12,7 +12,7 @@
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 1% 0 1%;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -25,43 +25,36 @@
   
 }
 .tools{
-  margin-top: 0.1rem;
-  padding: 1rem;
-  
+    margin-left: 1.5rem;
+    padding: 1.1rem;
+    color: black;
+    background-color: rgb(255, 253, 253);
+    border: 1px solid black;
 }
-.siteName a,.tools a {
+.tools a {
+   color: black;
+   text-decoration: none;
+}
+
+.siteName a,.contact a {
   text-decoration: none;
   color:white;
 }
 
-.tools .logout{
-  border: none;
-  color: blue;
-  text-decoration: underline;
-  
-}
-.tools a:hover{
-  
-  color: white;
-}
 .hamLogo-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.myLinksOnTopBar{
+  display: none;
 }
 .contactLogin-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.contactLogin-container .tools:nth-of-type(2) {
-  background-color: #f1eded;
-  margin-right: 7px;
 
-}
-.contactLogin-container .tools:nth-of-type(2) a{
-color: black;
-}
 #myLinks {
   display: none; /* Initially hide the links */
   flex-direction: column; /* Arrange items in a column */
@@ -84,7 +77,7 @@ color: black;
 
 /* Optional: Add hover effect */
 #myLinks li:hover {
-  background-color: rgb(184, 43, 43); /* Change background on hover */
+  background-color: #2098D1; /* Change background on hover */
 }
 
 
